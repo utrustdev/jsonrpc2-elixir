@@ -266,7 +266,7 @@ defmodule JSONRPC2.Server.Handler do
             "\n  Received: ",
             inspect(reply),
             "\n  Request: ",
-            json
+            inspect(json)
           ])
 
         standard_error_response(:internal_error, nil)
